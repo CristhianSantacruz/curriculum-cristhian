@@ -1,0 +1,268 @@
+/* Estilo general del header */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code';
+}
+.header-container {
+    background: url('/img/pexels-pixabay-414144.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo para el título */
+#title {
+    font-style: italic;
+    margin: 0;
+    font-size: 2em;
+    color: #0B60B0;
+}
+
+/* Estilo para la figura */
+.header-container figure {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-container img {
+    border-radius: 50%;
+    width: 100px; /* Puedes ajustar el tamaño según prefieras */
+    height: 100px; /* Hacer que la imagen sea cuadrada para asegurar que sea redonda */
+    display: block;
+    margin: 0 auto;
+}
+
+.header-container figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Cambia el color del correo al hacer hover */
+.header-container figure:hover figcaption {
+    color: yellow; /* Cambia este color según tu preferencia */
+}
+
+/* Estilo para la línea horizontal */
+.header-container hr {
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+/* Estilo para el nav */
+.nav-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-header ul li {
+    display: inline;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-header ul li a:hover {
+    background-color: #0B60B0;
+    padding: 10px;
+    border-radius: 10%;
+    color: yellow; /* Cambia este color según tu preferencia */
+}
+
+#container-message{
+    max-width: 50%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px 50px 30px ;
+
+}
+
+
+
+.text-justify{
+    text-align: center;
+    line-height: 1.6;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+
+}
+.container-education {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.education-info {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.education-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.education-info h3 {
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.education-logo {
+    flex: 0 0 150px; /* Ajusta el ancho de la imagen según sea necesario */
+    text-align: right;
+}
+
+.education-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional: para redondear las esquinas de la imagen */
+}
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.article-container header h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.article-container figure {
+    margin: 0 0 10px;
+}
+
+.article-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.article-container p {
+    font-size: 1em;
+    margin: 0 0 10px;
+}
+
+.article-container button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.article-container button:hover {
+    background-color: #0056b3;
+   
+}
+
+.footer-project {  
+    background-color: rgb(224, 223, 223);
+    padding: 10px 0px 3px 0px;
+    border-radius: 100px;
+    
+}
+.footer-project p {
+    color: rgb(14, 13, 13);
+}
+
+.footer-certifications{
+    padding: 10px 0px 3px 0px;
+    background-color: #007BFF;
+    border-radius: 15px 50px 30px 5px;
+}
+.footer-certifications p{
+    color: white;
+}
+
+.footer-certifications span{
+    color: white;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: #40A2D8;
+    padding-left: 16px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+section div, section article {
+    text-align: center;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 5px;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
