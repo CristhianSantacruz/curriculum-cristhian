@@ -114,6 +114,9 @@ body{
     padding-right: 20px;
     text-align: left;
 }
+.education-info p {
+    text-align: justify;
+}
 
 .education-info h2 {
     margin: 0 0 10px 0;
