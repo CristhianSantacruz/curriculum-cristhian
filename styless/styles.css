@@ -5,68 +5,30 @@ body{
     padding: 0;
     font-family: 'Fira Code';
 }
-.header-container {
-    background: url('/img/pexels-pixabay-414144.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    position: relative;
-}
 
-/* Estilo para el título */
-#title {
-    font-style: italic;
+.nav-header {
+    background-color: rgb(206, 138, 138); /* Color de fondo para la barra de navegación */
+    position: fixed; /* Fijar la barra de navegación */
+    top: 0; /* Ubicar en la parte superior */
+    padding: 20px 20px 10px 0px;
     margin: 0;
-    font-size: 2em;
-    color: #0B60B0;
+    width: 100%; /* Ancho completo */
+    z-index:1000; /* Asegurar que esté sobre otros elementos */
 }
 
-/* Estilo para la figura */
-.header-container figure {
-    margin: 20px auto;
-    display: inline-block;
-    text-align: center;
-}
-
-.header-container img {
-    border-radius: 50%;
-    width: 100px; /* Puedes ajustar el tamaño según prefieras */
-    height: 100px; /* Hacer que la imagen sea cuadrada para asegurar que sea redonda */
-    display: block;
-    margin: 0 auto;
-}
-
-.header-container figcaption {
-    margin-top: 10px;
-    font-size: 1em;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-/* Cambia el color del correo al hacer hover */
-.header-container figure:hover figcaption {
-    color: yellow; /* Cambia este color según tu preferencia */
-}
-
-/* Estilo para la línea horizontal */
-.header-container hr {
-    border: 1px solid white;
-    margin: 20px 0;
-}
-
-/* Estilo para el nav */
 .nav-header ul {
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
+    
 }
 
 .nav-header ul li {
     display: inline;
+    
 }
 
 .nav-header ul li a {
@@ -114,12 +76,11 @@ body{
     padding-right: 20px;
     text-align: left;
 }
-.education-info p {
-    text-align: justify;
-}
 
 .education-info h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+]
+
 }
 
 .education-info h3 {
@@ -231,6 +192,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 80px;
 }
 
 

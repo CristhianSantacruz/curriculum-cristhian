@@ -1,0 +1,51 @@
+.header-container {
+    /*background: url('https://placehold.co/600x400/000000/FFF') no-repeat center center;*/
+    background-color: black;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    text-align: center;
+   
+}
+
+/* Estilo para el título */
+#title {
+    font-style: italic;
+    margin: 0;
+    font-size: 2em;
+    color: #0B60B0;
+}
+
+/* Estilo para la figura */
+.header-container figure {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-container img {
+    border-radius: 50%;
+    width: 100px; /* Puedes ajustar el tamaño según prefieras */
+    height: 100px; /* Hacer que la imagen sea cuadrada para asegurar que sea redonda */
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.header-container figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+/* Cambia el color del correo al hacer hover */
+.header-container figure:hover figcaption {
+    color: yellow; /* Cambia este color según tu preferencia */
+}
+
+/* Estilo para la línea horizontal */
+.header-container hr {
+    border: 1px solid white;
+    margin: 20px 0;
+}
