@@ -1,0 +1,43 @@
+#education {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.container-education {
+    max-width: 768px;
+    display: flex;
+    background-color: beige;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto; /* Centrar horizontalmente */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.education-info {
+    max-width: 60%;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.education-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-info p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.education-logo {
+    display: flex;
+    align-items: center; /* Align image vertically */
+}
+
+.education-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

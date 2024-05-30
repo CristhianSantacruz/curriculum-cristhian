@@ -6,28 +6,38 @@
     <meta name="author" content="Cristhian Santacruz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Santacruz Cristhian</title>
-    <!--<link rel="stylesheet" href="./styless/styles.css">
-    <link rel="stylesheet" href="./styless/header-styles.css">-->
+    <link rel="stylesheet" href="./styless/styles.css">
+    <link rel="stylesheet" href="./styless/header-styles.css">
+    <link rel="stylesheet" href="./styless/nav-header.css">
+    <link rel="stylesheet" href="./styless/education.css">
+    <link rel="stylesheet" href="./styless/skills.css">
+    <link rel="stylesheet" href="./styless/contact.css">
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
 </head>
 </head>
 <body>
     <nav class="nav-header">    
-        <ul>
-            <li><a href="#education">Educacion</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#certifications">Certificaciones</a></li>
-            <li><a href="#content">Youtube</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container-nav">
+            <figure>
+                <img src="./img/rostro.jpg" alt="logo" title="klashz">
+            </figure>
+            <ul>
+                <li><a href="#education">Educacion</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#certifications">Certificaciones</a></li>
+                <li><a href="#content">Youtube</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>   
     <header class="header-container">
-        <h1 id="title">Cristhian Santacruz</h1>
+        <section>   
         <figure>
             <img src="./img/rostro.jpg" alt="Cristhian Santacruz" width="50px">
             <figcaption>crimsant@espol.edu.ec</figcaption>
         </figure>
+        </section>
         <hr>
         <nav>
             <ul>
@@ -38,17 +48,18 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="principal">
             <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error qui nemo provident nulla rem, numquam, voluptatum eius corrupti adipisci autem repudiandae officia soluta. Itaque quisquam quasi neque ab voluptatum?</p>
-            </div>
-            <div>
-                <p>MAPA UBICACION DE CIUDAD EN EL PAIS</p>
+                <div id="texto-principal">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error qui nemo provident nulla rem, numquam, voluptatum eius corrupti adipisci autem repudiandae officia soluta. Itaque quisquam quasi neque ab voluptatum?</p>
+                </div>
+              
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.25681740348!2d-80.14491792772134!3d-2.1521492262435715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses-419!2sec!4v1716219057618!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <section itemprop="educations" id="education">
-            <h2>Educación</h2>
+            <h2>Educación🎓</h2>
+            
             <div class="container-education">
                 <div class="education-info">
                     <h3>Escuela Politecnica del Litoral</h2>
@@ -56,40 +67,31 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, exercitationem eligendi? Unde repudiandae vitae impedit magnam veniam sapiente sunt! Nostrum ea blanditiis facere atque? Nesciunt sint dicta voluptas ipsam quasi!</p>
                 </div>
                 <div class="education-logo">
-                    <img src="https://placehold.co/600x400/000000/FFF" alt="Logo Universidad" width="300px" >
-                </div> 
-            </div>
-            <!-- Example 2-->
-            <div class="container-education">
-                <div class="education-info">
-                    <h3>Escuela Politecnica del Litoral</h2>
-                    <h3>Ingenieria en Computacion</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, exercitationem eligendi? Unde repudiandae vitae impedit magnam veniam sapiente sunt! Nostrum ea blanditiis facere atque? Nesciunt sint dicta voluptas ipsam quasi!</p>
-                </div>
-                <div class="education-logo">
-                    <img src="https://placehold.co/600x400/000000/FFF" alt="Logo Universidad" width="300px" >
+                    <img src="https://placehold.co/600x400/000000/FFF" alt="Logo Universidad"  >
                 </div> 
             </div>
         </section>
         <hr>
-    <section itemprop="skills" id="skill">
-        <h2>Skills</h2>
-        <div>
-            <h3>Lenguajes</h3>
-            <img src="https://skillicons.dev/icons?i=java,kotlin"  width="300px"/>
-        </div>
-        <div>
-            <h3>Frameworks</h3>
-            <img src="https://skillicons.dev/icons?i=spring,spring"  width="300px"/>
-        </div>
-        <div>
-            <h3>Herramietnas</h3>
-            <img src="https://skillicons.dev/icons?i=docker,git"  width="300px"/>
-        </div>
-    </section>
+        <section itemprop="skills" id="skill">
+            <h2>Skills🚀</h2>
+            <div class="skill-container">
+                <div class="skill-column">
+                    <h3>Lenguajes</h3>
+                    <img src="https://skillicons.dev/icons?i=java,kotlin" width="300px"/>
+                </div>
+                <div class="skill-column">
+                    <h3>Frameworks</h3>
+                    <img src="https://skillicons.dev/icons?i=spring,spring" width="300px"/>
+                </div>
+                <div class="skill-column">
+                    <h3>Herramientas</h3>
+                    <img src="https://skillicons.dev/icons?i=docker,git" width="300px"/>
+                </div>
+            </div>
+        </section>
     <hr>
     <section itemprop="projects" id="projects">
-        <h2>Proyectos</h2>
+        <h2>Proyectos💼</h2>
         <div class="container-grid">
             <article class="article-container">
                 <header>
@@ -142,7 +144,10 @@
                     <figcaption>Proyecto de ejemplo 1</figcaption>
                 </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur obcaecati minima temporibus, numquam magnam.</p>
-                <button>Visitar Github del Proyecto</button>
+                
+        
+                    <button>Visitar Github del Proyecto</button>
+                
                 <footer class="footer-project">
                     <p>🍵Java  ✡️Quarkus</p>
                 </footer>
@@ -152,7 +157,7 @@
     </section>
     <hr>
     <section id="certifications">
-        <h2>Certificaciones</h2>
+        <h2>Certificaciones🏫</h2>
         <div class="container-grid">
             <article class="article-container">
                 <header>
@@ -230,22 +235,26 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet quod quasi repudiandae mollitia temporibus vel a blanditiis impedit, animi atque repellat rem. Totam provident eaque mollitia deserunt doloribus veniam!</p>
     </section>
    
-
+    <section id="contact">
+        <h2>Hola, ¿cómo estás? Envíame un mensaje 📩</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+    
 </main>
-<section id="contact">
-    <h2>Hola como estas</h2>
-    <form>
-        <label for="nombreCompletos">Nombre Completo: </label>
-        <input type="text" name="lastname"  required>
-        <br>
-        <label for="email">Email: </label>
-        <input type="email" name="email"  required>
-        <br>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-        <input type="submit" value="Enviar Mensaje">
-    </form>
-</section>
     <footer>
         <div>
             <p>Cristhian Santacruz</p>
