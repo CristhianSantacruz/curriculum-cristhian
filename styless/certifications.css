@@ -1,0 +1,108 @@
+#certifications {
+    padding: 2rem;
+}
+
+#certifications h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: var(--color4);
+}
+
+#nombre-empresa {
+    color: var(--color4);
+}
+.container-certification {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.article-certification {
+    background-color: var(--color5);
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.article-certification header  {
+    padding: 0;
+    margin: -20px -20px 20px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+   
+
+}
+.article-certification header  h3{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+}
+.article-certification header figure  {
+   
+    margin: 0;
+    width: 100%;
+ }
+ 
+ .article-certification header figure img {
+     width: 100%;
+     height: 300px;
+     display: block;
+     object-fit: cover;
+ }
+ 
+ 
+.article-certification h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+.article-certification p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+#description {
+    margin-bottom: 20px;
+}
+.article-certification a {
+    
+    background-color: var(--color3);
+    color: var(--color5);
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.article-certification a:hover {
+    background-color: var(--color4);
+}
+
+.footer-certifications {
+    margin-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+}
+
+.footer-certifications p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.footer-certifications span {
+    font-weight: bold;
+}

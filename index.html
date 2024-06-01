@@ -6,12 +6,16 @@
     <meta name="author" content="Cristhian Santacruz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Santacruz Cristhian</title>
+    <link rel="icon" href="./img/imagen_de_logotipo_de_klashz-removebg-preview-_1_.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styless/styles.css">
     <link rel="stylesheet" href="./styless/header-styles.css">
     <link rel="stylesheet" href="./styless/nav-header.css">
     <link rel="stylesheet" href="./styless/education.css">
     <link rel="stylesheet" href="./styless/skills.css">
     <link rel="stylesheet" href="./styless/contact.css">
+    <link rel="stylesheet" href="./styless/certifications.css">
+    <link rel="stylesheet" href="./styless/youtube.css">
+    <link rel="stylesheet" href="./styless/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
 </head>
 </head>
@@ -19,7 +23,7 @@
     <nav class="nav-header">    
         <div class="container-nav">
             <figure>
-                <img src="./img/rostro.jpg" alt="logo" title="klashz">
+                <img src="./img/imagen de logotipo de klashz.jpg" alt="logo" title="klashz">
             </figure>
             <ul>
                 <li><a href="#education">Educacion</a></li>
@@ -33,17 +37,20 @@
     </nav>   
     <header class="header-container">
         <section>   
-        <figure>
+            <figure>
             <img src="./img/rostro.jpg" alt="Cristhian Santacruz" width="50px">
-            <figcaption>crimsant@espol.edu.ec</figcaption>
         </figure>
+        <div class="typewriter">
+            <h1 id="name">Cristhian Santacruz</h1>
+            <h1>crimsant@espol.edu.ec</h1>
+          </div>
         </section>
         <hr>
         <nav>
             <ul>
                 <li><a href="https://ec.linkedin.com/in/cristhiansantacruz" target="_blank">Linkedin</a></li>
                 <li><a href="https://github.com/CristhianSantacruz" target="_blank">Github</a></li>
-                <li><a href="" target="_blank">Youtube</a></li>
+                <li><a href="https://www.youtube.com/@klashzBackendQ" target="_blank">Youtube</a></li>
             </ul>
         </nav>
     </header>
@@ -51,12 +58,20 @@
         <section id="principal">
             <div>
                 <div id="texto-principal">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error qui nemo provident nulla rem, numquam, voluptatum eius corrupti adipisci autem repudiandae officia soluta. Itaque quisquam quasi neque ab voluptatum?</p>
+                    <p>No solo se trata de tus resultados tu progreso diario habla mas de tu verdadero compromiso. 
+                    <span>"Siempre alguien esta observando"</span>🤖 </p>
                 </div>
               
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.25681740348!2d-80.14491792772134!3d-2.1521492262435715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses-419!2sec!4v1716219057618!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                
             </div>
+            
         </section>
+        <p class="guianav" id="">Hello World</p>
+       <div id="container-hr" >
+        <hr class="one" >
+       </div>
         <section itemprop="educations" id="education">
             <h2>Educación🎓</h2>
             
@@ -64,14 +79,16 @@
                 <div class="education-info">
                     <h3>Escuela Politecnica del Litoral</h2>
                     <h3>Ingenieria en Computacion</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, exercitationem eligendi? Unde repudiandae vitae impedit magnam veniam sapiente sunt! Nostrum ea blanditiis facere atque? Nesciunt sint dicta voluptas ipsam quasi!</p>
+                    <p>La carrera de Computación forma profesionales que participan activamente en grupos multidisciplinares para diseñar e implementar soluciones de software y hardware basadas en el conocimiento del contexto, prácticas y necesidades de los diversos grupos de nuestra sociedad. <span><a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/computacion" target="_blank">Visitar</a></span></p>
                 </div>
-                <div class="education-logo">
-                    <img src="https://placehold.co/600x400/000000/FFF" alt="Logo Universidad"  >
+                <div class="education-logo" id="skillna">
+                    <img src="./img/espol.jpg" alt="Logo Universidad"  >
                 </div> 
             </div>
         </section>
-        <hr>
+        <div id="container-hr">
+            <hr class="one">
+           </div>
         <section itemprop="skills" id="skill">
             <h2>Skills🚀</h2>
             <div class="skill-container">
@@ -89,152 +106,142 @@
                 </div>
             </div>
         </section>
-    <hr>
+        <div id="container-hr">
+            <hr class="one">
+           </div>
     <section itemprop="projects" id="projects">
         <h2>Proyectos💼</h2>
         <div class="container-grid">
             <article class="article-container">
                 <header>
-                    <h3>Nombre del Proyecto 1</h3>
+                    <h3>Microservice Ecommerce</h3>
                 </header>
                 <figure>
-                    <img src="https://placehold.co/600x400?text=Hello\nWorld" alt="imagen proyecto 1">
-                    <figcaption>Proyecto de ejemplo 1</figcaption>
+                    <img src="./img/project/ecommerce.jpg" alt="imagen proyecto 1">
+                    <figcaption>Backend Ecommerce</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur obcaecati minima temporibus, numquam magnam.</p>
-                <button>Visitar Github del Proyecto</button>
+                <p>
+                    Implementamos un microservicio con Quarkus, utilizando health checks, tolerancia a fallos y métricas para monitorear y optimizar el rendimiento. Incluimos autorización, registro de usuarios, gestión de carritos y comentarios, y calificación de productos. Utilizamos REST clients para comunicación entre servicios y Panache Hibernate para acceso a la base de datos. La autenticación JWT garantiza la seguridad en las comunicaciones.</p>
+                <a href="https://github.com/CristhianSantacruz/microservice-ecommerce" target="_blank">Visitar Github del Proyecto</a>
                 <footer class="footer-project">
                     <p>🍵Java  ✡️Quarkus</p>
                 </footer>
             </article>
             <article class="article-container">
                 <header>
-                    <h3>Nombre del Proyecto 1</h3>
+                    <h3>AdoptedPaw</h3>
                 </header>
                 <figure>
-                    <img src="https://placehold.co/600x400?text=Hello\nWorld" alt="imagen proyecto 1">
-                    <figcaption>Proyecto de ejemplo 1</figcaption>
+                    <img src="./img/project/adopted.png" alt="imagen proyecto 2">
+                    <figcaption>Pagina Principal</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur obcaecati minima temporibus, numquam magnam.</p>
-                <button>Visitar Github del Proyecto</button>
+                <p>
+                    Es un proyecto que facilita la adopción de mascotas a usuarios interesados. Ofrece la posibilidad de registrar una mascota para su adopción, proporcionando información detallada como edad, tamaño y una imagen cargada por el usuario para que otros puedan visualizarla. Además, permite a los usuarios interesados en adoptar establecer comunicación con el dueño actual de la mascota para iniciar el proceso de adopción. </p>
+                <a href="https://github.com/CristhianSantacruz/AdoptedPaw-_Frontend_Angualar17" target="_blank">Visitar Github del Proyecto</a>
                 <footer class="footer-project">
-                    <p>🍵Java  ✡️Quarkus</p>
+                    <p>🅰️Angular 🌿SpringBoot </p>
                 </footer>
-            </article>
-            <article class="article-container">
+            </article><article class="article-container">
                 <header>
-                    <h3>Nombre del Proyecto 1</h3>
+                    <h3>Consencionario de Coches</h3>
                 </header>
                 <figure>
-                    <img src="https://placehold.co/600x400?text=Hello\nWorld" alt="imagen proyecto 1">
-                    <figcaption>Proyecto de ejemplo 1</figcaption>
+                    <img src="./img/project/coches.png" alt="imagen proyecto 3">
+                    <figcaption>Pagina Principal</figcaption>
                 </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur obcaecati minima temporibus, numquam magnam.</p>
-                <button>Visitar Github del Proyecto</button>
+                <p>Ofrece acciones administrativas mediante un token de backend, como registro y eliminación de automóviles. Los usuarios pueden registrarse, verificar su inicio de sesión y acceder a áreas protegidas para ver vehículos disponibles. También gestionan carritos, realizan compras, generan facturas y consultan historial de compras con detalles de productos.(solo frontend)</p>
+                <a href="https://github.com/CristhianSantacruz/CochesFrontend" target="_blank">Visitar Github del Proyecto</a>
                 <footer class="footer-project">
-                    <p>🍵Java  ✡️Quarkus</p>
+                    <p>🅰️Angular 🌿SpringBoot </p>
                 </footer>
             </article>
-            <article class="article-container">
-                <header>
-                    <h3>Nombre del Proyecto 1</h3>
-                </header>
-                <figure>
-                    <img src="https://placehold.co/600x400?text=Hello\nWorld" alt="imagen proyecto 1">
-                    <figcaption>Proyecto de ejemplo 1</figcaption>
-                </figure>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tenetur obcaecati minima temporibus, numquam magnam.</p>
-                
-        
-                    <button>Visitar Github del Proyecto</button>
-                
-                <footer class="footer-project">
-                    <p>🍵Java  ✡️Quarkus</p>
-                </footer>
-            </article>
-            <!-- Añade más artículos según sea necesario -->
         </div>
     </section>
-    <hr>
+    <div id="container-hr">
+        <hr class="one">
+       </div>
     <section id="certifications">
         <h2>Certificaciones🏫</h2>
-        <div class="container-grid">
-            <article class="article-container">
+        <div class="container-certification">
+            <article class="article-certification">
                 <header>
                     <figure>
-                        <img src="https://placehold.co/400" alt="imagen certificacion">
-                        <figcaption>Imangen del certificado</figcaption>
+                        <img src="./img/certifications/quarkus.png" alt="imagen proyecto 1">
                     </figure>
-                    <h3>Nombre</h3>
+                    <h3>Quarkus Esencial</h3>
                 </header>
-                <p style="color:rgb(231, 148, 40)">Empresa intitucion</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore necessitatibus atque doloribus reiciendis magnam fugiat harum sint cum. Facilis incidunt optio minus magni eos tempora nemo ex consequatur quis quisquam?</p>
-                <button>Visitar certificacion</button>
+                <p id="nombre-empresa">Linkedin Learning</p>
+                <p id="description">Quarkus, el framework de Java para crear aplicaciones nativas preparadas para Kubernetes. Gracias a este curso, soy capaz de utilizarlo para crear propios sistemas de microservicios eficaces.</p>
+                <a href="https://www.linkedin.com/learning/certificates/5cafeaee7cb9d0ab9e187e05b49ac5c88f98497fbe6eb487780f1add310bef6b?u=92964874" target="_blank">Ver Certificado</a>
                 <footer class="footer-certifications">
-                    <p> <span>Fecha de Expecicion:</span> Diciembre del 2022</p>
+                    <p> <span>Fecha de Expecicion:</span> 2024-04-13</p>
                 </footer>
-            </article><br>
+            </article>  
+            <article class="article-certification">
+                <header>
+                    <figure>
+                        <img src="./img/certifications/mongo.png" alt="imagen proyecto 1">
+                    </figure>
+                    <h3>Mongo Java Path</h3>
+                </header>
+                <p id="nombre-empresa">MongoDB</p>
+                <p id="description">Esta ruta de aprendizaje contiene una serie de cursos para enseñarle las habilidades de MongoDB. Aprendiendo a construir  aplicaciones modernas con Java, utilizando MongoDB como base de datos.</p>
+                <a href="https://learn.mongodb.com/c/2PdHxSkOT46eyv2mi7ycjQ" target="_blank">Ver Certificado</a>
+                <footer class="footer-certifications">
+                    <p> <span>Fecha de Expecicion:</span> 2024-04-02</p>
+                </footer>
+            </article>  
+            <article class="article-certification">
+                <header>
+                    <figure>
+                        <img src="./img/certifications/github.jpg" alt="imagen proyecto 1">
+                    </figure>
+                    <h3>Github Developers</h3>
+                </header>
+                <p id="nombre-empresa">Linkedin Learning</p>
+                <p id="description"> En este curso aprendi los conceptos básicos del control de versiones Git, los servicios que ofrece GitHub, como crear, gestionar y examinar nuestros repositorios online.</p>
+                <a href="https://www.linkedin.com/learning/certificates/96a1fc491c1413c4e40a5f0898b76f96edfe0fbfe6ef36abbf3c055dca12eb8e?u=92964874" target="_blank">Ver Certificado</a>
+                <footer class="footer-certifications">
+                    <p> <span>Fecha de Expecicion:</span> 2024-04-02</p>
+                </footer>
+            </article>         
         </div>
     </section>
-    <!-- 
-    <hr>
-    <section>
-        <h2>Eventos y participaciones</h2>
-        <article>
-            <h3>Nombre</h3>
-            <figure>
-                <img src="" alt="imagen evento">
-                <figcaption></figcaption>
-            </figure>
-            <h3>Descripcion de qu trata el evento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Saepe vero alias minus quos incidunt, maiores eaque 
-                id rem nulla molestias blanditiis corporis quibusdam 
-                magnam voluptates dicta recusandae. Eum, harum eligendi.</p>
-            <h3>experiencia del evento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Voluptatibus doloremque, 
-                ccusamus, quae libero odio quia repellat 
-                earum vero amet illum quasi dolorem 
-                laborum! Officiis asperiores ipsum minima maxime, est sequi.</p>    
-        </article><br>
-        <article>
-            <h3>Nombre</h3>
-            <figure>
-                <img src="" alt="imagen evento">
-                <figcaption></figcaption>
-            </figure>
-            <h3>Descripcion de qu trata el evento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Saepe vero alias minus quos incidunt, maiores eaque 
-                id rem nulla molestias blanditiis corporis quibusdam 
-                magnam voluptates dicta recusandae. Eum, harum eligendi.</p>
-            <h3>experiencia del evento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Voluptatibus doloremque, 
-                ccusamus, quae libero odio quia repellat 
-                earum vero amet illum quasi dolorem 
-                laborum! Officiis asperiores ipsum minima maxime, est sequi.</p>    
-        </article>
-    </section>-->
-    <section id="content">
-        <h2>Canal de Youtube</h2>
-        <figure>
-            <figure>
+    <div id="container-hr">
+        <hr class="one">
+       </div>
+       <section id="content">
+        <div class="channel-header">
+            <figure class="channel-logo">
                 <img src="./img/rostro.jpg" alt="Cristhian Santacruz" width="50px">
                 <figcaption>KlashZend Logo</figcaption>
-            </figure> 
-        </figure>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cupiditate in laudantium error iusto ut atque, temporibus esse quam, ipsum dolore eum facilis. Dicta, omnis dignissimos distinctio aut accusamus saepe.</p>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ObXnJH-ERLY?si=gJSP_Wh2723Tk7Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+            <h2>Canal de YouTube</h2>
+        </div>
+        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam cupiditate in laudantium error iusto ut atque, temporibus esse quam, ipsum dolore eum facilis. Dicta, omnis dignissimos distinctio aut accusamus saepe.</p>
+        <div class="content-body">
+            <div class="video-section">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ObXnJH-ERLY?si=gJSP_Wh2723Tk7Bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="topics-section">
+                <p>Temas que se exponen</p>
+                <ul>
+                    <li>Backend</li>
+                    <li>Java</li>
+                    <li>Quarkus & Spring Boot</li>
+                </ul>
+                <a href="https://www.youtube.com" target="_blank" class="youtube-link">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube.png" alt="YouTube Logo">
+                    Visita mi canal
+                </a>
+            </div>
+        </div>
     </section>
-
-    <section>
-        <h2>Motivacion del canal</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet quod quasi repudiandae mollitia temporibus vel a blanditiis impedit, animi atque repellat rem. Totam provident eaque mollitia deserunt doloribus veniam!</p>
-    </section>
-   
+    
+    
+    <div id="container-hr">
+        <hr class="one">
+       </div>
     <section id="contact">
         <h2>Hola, ¿cómo estás? Envíame un mensaje 📩</h2>
         <form>
@@ -255,11 +262,38 @@
     </section>
     
 </main>
-    <footer>
-        <div>
-            <p>Cristhian Santacruz</p>
-            <p>Copyrigth</p>
-        </div>            
-    </footer>
+<footer id="my-footer">
+    <div class="footer-content">
+        <div class="logo-container">
+            <img src="./img/rostro.jpg" alt="Logo" class="logo">
+            <div class="text-container">
+                <p>@Cristhian Santacruz</p>
+                <p>Copyright</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a href="https://github.com/CristhianSantacruz" target="_blank">
+                    <svg fill="var(--color5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577v-2.158c-3.338.727-4.042-1.415-4.042-1.415-.546-1.387-1.334-1.757-1.334-1.757-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.806 1.305 3.492.997.107-.775.418-1.305.762-1.606-2.665-.305-5.467-1.334-5.467-5.93 0-1.31.467-2.382 1.235-3.222-.124-.303-.535-1.526.118-3.176 0 0 1.007-.323 3.3 1.23.957-.266 1.983-.399 3.003-.403 1.02.004 2.046.137 3.003.403 2.29-1.553 3.296-1.23 3.296-1.23.656 1.65.245 2.873.12 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.807 5.624-5.478 5.92.43.37.823 1.102.823 2.222v3.293c0 .319.218.69.825.575C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="www.linkedin.com/in/cristhiansantacruz" target="_blank">
+                    <svg fill="var(--color5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M22.23 0H1.77C.792 0 0 .774 0 1.729v20.543C0 23.225.792 24 1.77 24H22.23C23.207 24 24 23.225 24 22.271V1.729C24 .774 23.207 0 22.23 0zM7.081 20.452H3.56V9.047h3.521v11.405zM5.32 7.659C4.179 7.659 3.25 6.719 3.25 5.616S4.179 3.574 5.32 3.574c1.143 0 2.073.941 2.073 2.042 0 1.103-.93 2.043-2.073 2.043zm14.837 12.793h-3.521v-5.539c0-1.323-.024-3.028-1.847-3.028-1.848 0-2.13 1.445-2.13 2.938v5.629h-3.52V9.047h3.377v1.557h.048c.47-.889 1.614-1.828 3.325-1.828 3.56 0 4.215 2.342 4.215 5.38v6.296z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@klashzBackendQ" target="_blank">
+                    <svg fill="var(--color5)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M23.499 6.186a2.896 2.896 0 0 0-2.038-2.04C19.745 3.682 12 3.682 12 3.682s-7.745 0-9.461.464a2.896 2.896 0 0 0-2.038 2.04C.5 7.947.5 12 .5 12s0 4.053.464 5.814a2.896 2.896 0 0 0 2.04 2.04c1.715.464 9.461.464 9.461.464s7.745 0 9.461-.464a2.896 2.896 0 0 0 2.04-2.04C23.5 16.053 23.5 12 23.5 12s0-4.053-.001-5.814zM9.751 15.568v-7.137l6.048 3.568-6.048 3.569z"/>
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>

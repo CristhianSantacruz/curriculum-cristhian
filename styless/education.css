@@ -1,12 +1,25 @@
+:root {
+    --color1 : #131a2d;
+    --color2 : #212346;
+    --color3 : #652c9e;
+    --color4 : #a03cbe;
+    --color5 : #eee6f3;
+}
+
 #education {
+    margin-top: 0px;
     margin: 40px 0;
     text-align: center;
+}
+
+#education > h2{
+    color: var(--color4);
 }
 
 .container-education {
     max-width: 768px;
     display: flex;
-    background-color: beige;
+    background-color: var(--color5);
     align-items: center;
     justify-content: space-around;
     margin: 10px auto; /* Centrar horizontalmente */
@@ -23,11 +36,13 @@
 .education-info h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: var(--color3);
 }
 
 .education-info p {
     font-size: 1em;
     line-height: 1.6;
+    color: var(--color1);
 }
 
 .education-logo {
@@ -36,8 +51,9 @@
 }
 
 .education-logo img {
+    margin-top: 50px;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--color3);
 }

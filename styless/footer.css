@@ -1,0 +1,75 @@
+:root {
+    --color1 : #131a2d;
+    --color2 : #212346;
+    --color3 : #652c9e;
+    --color4 : #a03cbe;
+    --color5 : #eee6f3;
+}
+
+
+#my-footer {
+    background-color:var(--color1);
+    color: var(--color5);
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+   
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-icons svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--color3);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover svg {
+    transform: scale(1.1);
+}
+

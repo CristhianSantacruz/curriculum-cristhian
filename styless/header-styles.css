@@ -1,8 +1,17 @@
+:root {
+    --color1 : #131a2d;
+    --color2 : #212346;
+    --color3 : #652c9e;
+    --color4 : #a03cbe;
+    --color5 : #eee6f3;
+}
+
+
 .header-container {
     background-color: black;
     background-size: cover;
     padding: 120px 20px 20px 20px;
-    color: white;
+    color:var(--color5);
     text-align: center;
     width: 100%;
     margin-bottom:0px; /* Ajusta el ancho según sea necesario */
@@ -34,12 +43,13 @@
     height: 100px;
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
 }
 
 .header-container figcaption {
     margin-top: 10px;
     font-size: 1em;
-    color: white;
+    color: var(--color5);
     transition: color 0.3s ease;
 }
 
@@ -70,5 +80,7 @@
 }
 
 .header-container nav ul li a:hover {
-    color: red;
+    font-weight: bold;
+    font-style: italic;
+    color:var(--color4);
 }

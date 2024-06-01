@@ -1,0 +1,68 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.channel-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.channel-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.description {
+    text-align: justify;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.content-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-section {
+    flex: 1;
+}
+
+.topics-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.youtube-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #FF0000;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.youtube-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.youtube-link:hover {
+    background-color: #CC0000;
+}

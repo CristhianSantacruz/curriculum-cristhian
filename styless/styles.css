@@ -1,8 +1,17 @@
-/* Estilo general del header */
+
+:root {
+    --color1 : #131a2d;
+    --color2 : #212346;
+    --color3 : #652c9e;
+    --color4 : #a03cbe;
+    --color5 : #eee6f3;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Fira Code';
+    background-color: var(--color2);
 }
 
 main {
@@ -20,6 +29,46 @@ p {
     text-align: justify;
 }
 
+.typewriter #name {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(233, 233, 233); }
+  }
+#container-hr {
+    
+    padding: 0px;
+    margin-bottom: -30px;
+}
+
+.guianav {
+    visibility: hidden;
+}
+
+hr.one {
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left,var(--color4),var(--color2));
+
+}
+ 
 #container-message {
     max-width: 50%;
     background-color: rgb(0, 0, 0);
@@ -59,11 +108,17 @@ p {
     max-width: 500px;
     max-height: 200px;
     border-radius: 15px 50px 30px;
-    border: 2px solid rgb(234, 166, 166); /* Añadir el borde aquí */
+    border: 2px solid var(--color4); 
 }
 
 #texto-principal > p {
-    color: white;
+    color: var(--color5);
+}
+
+#texto-principal  span {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color4);
 }
 
 #principal p {
@@ -86,8 +141,8 @@ p {
 }
 
 .article-container {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--color5);
+    border: 1px solid var(--color1);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -107,6 +162,7 @@ p {
     margin: 0 0 10px;
     font-size: 1.5em;
     text-align: center;
+    color: var(--color1);
 }
 
 .article-container figure {
@@ -115,10 +171,13 @@ p {
 
 .article-container figure figcaption {
     text-align: center;
+    color: var(--color3);
+    font-weight: bold;
+    font-style: italic;
 }
 .article-container img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 8px;
 }
 
@@ -128,22 +187,23 @@ p {
     text-align: justify;
 }
 
-.article-container button {
+.article-container a {
     display: inline-block;
     padding: 10px 15px;
     font-size: 1em;
-    color: #fff;
-    background-color: #007BFF;
+    color: var(--color5);
+    background-color:var(--color3);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 10px;
-    text-align: center; 
+    text-align: center;
+    text-decoration: none; 
 }
 
-.article-container button:hover {
-    background-color: #0056b3;
+.article-container a:hover {
+    background-color: var(--color4);
    
 }
 .footer-project > p {
@@ -154,9 +214,8 @@ p {
 }
 
 #projects h2 {
-    text-align: center; /* Centra el título de la sección */
+    margin-top: 30px;
+    text-align: center; 
+    color: var(--color4);
 }
-
-
-
 

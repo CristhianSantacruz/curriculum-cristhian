@@ -1,10 +1,16 @@
+:root {
+    --color1 : #131a2d;
+    --color2 : #212346;
+    --color3 : #652c9e;
+    --color4 : #a03cbe;
+    --color5 : #eee6f3;
+}
 
 .nav-header {
-    background-color: rgb(206, 138, 138); /* Color de fondo para la barra de navegación */
+    background-color: var(--color1) ;/* Color de fondo para la barra de navegación */
     position: fixed; /* Fijar la barra de navegación */
     top: 0; /* Ubicar en la parte superior */
     padding: 0px 10px;
-    margin: 0;
     width: 100%; /* Ancho completo */
     z-index:1000; /* Asegurar que esté sobre otros elementos */
 }
@@ -33,7 +39,7 @@
 
 .nav-header ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--color5);
     font-size: 1em;
     transition: color 0.3s ease;
 }
@@ -41,7 +47,7 @@
 .nav-header ul li a:hover {
    
     border-radius: 10%;
-    color: rgb(0, 0, 0); /* Cambia este color según tu preferencia */
+    color: var(--color4); /* Cambia este color según tu preferencia */
 }
 .nav-header img {
     width: 100px;
