@@ -12,6 +12,7 @@ body {
     padding: 0;
     font-family: 'Fira Code';
     background-color: var(--color2);
+    overflow-x: hidden;
 }
 
 main {
@@ -30,23 +31,34 @@ p {
 }
 
 .typewriter #name {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 255, 255); 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  .typewriter #saludo {
+    color: var(--color3);
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    padding-bottom: 10px;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   
-  /* The typing effect */
+  
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
   
-  /* The typewriter cursor effect */
+  
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(233, 233, 233); }
@@ -130,7 +142,7 @@ hr.one {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: 2px solid rgb(234, 166, 166); /* Añadir el borde aquí */
+    border: 2px solid rgb(234, 166, 166); 
 }
 
 
@@ -219,3 +231,35 @@ hr.one {
     color: var(--color4);
 }
 
+
+
+@media (max-width: 768px) {
+    #principal > div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #texto-principal {
+        margin: 20px; 
+        max-width: 100%;
+        text-align: center; 
+
+    #texto-principal p {
+        font-size: 14px; 
+    }
+
+    #texto-principal span {
+        font-size: 14px; 
+    }
+
+    #principal iframe {
+        margin: 20px 0; 
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        border-radius: 15px; 
+        border: 2px solid rgb(234, 166, 166); 
+    }
+}
+}

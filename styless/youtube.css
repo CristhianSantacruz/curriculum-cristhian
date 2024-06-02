@@ -1,16 +1,28 @@
+
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    background-color: var(--color5);
     padding: 20px;
+    margin-top: 60px;
+    border-radius: 15px 50px 30px;
+    border: 2px solid var(--color4); 
+    box-sizing: border-box; 
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .channel-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+.channel-header > h2 {
+    color: var(--color3);
 }
 
 .channel-logo {
@@ -21,28 +33,59 @@
 }
 
 .description {
+    margin-top: -20px;
     text-align: justify;
     max-width: 800px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .content-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+   
 }
 
 .video-section {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .topics-section {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.topics-section  > p {
+    color: var(--color3);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.topics-section ul {
+    list-style: none; 
+    padding: 0;
+    text-align: left; 
+}
+
+.topics-section ul li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.video-section iframe {
+    border-radius: 15px 50px;
+    border: 5px solid var(--color4); 
+    box-sizing: border-box; 
 }
 
 .youtube-link {
@@ -51,8 +94,8 @@
     gap: 5px;
     margin-top: 20px;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #FF0000;
+    color: var(--color5);
+    background-color: var(--color3);
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -64,5 +107,35 @@
 }
 
 .youtube-link:hover {
-    background-color: #CC0000;
+    background-color: var(--color4);
+}
+
+
+@media (max-width: 768px) {
+    .channel-header {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .channel-logo {
+        margin-right: 0; 
+    }
+
+    .description {
+        max-width: 100%; 
+    }
+
+    .content-body {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .video-section {
+        width: 100%; 
+    }
+
+    .topics-section {
+        width: 100%; 
+    }
 }

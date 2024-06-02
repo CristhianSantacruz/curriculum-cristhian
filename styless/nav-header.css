@@ -7,12 +7,12 @@
 }
 
 .nav-header {
-    background-color: var(--color1) ;/* Color de fondo para la barra de navegación */
-    position: fixed; /* Fijar la barra de navegación */
-    top: 0; /* Ubicar en la parte superior */
+    background-color: var(--color1) ;
+    position: fixed; 
+    top: 0; 
     padding: 0px 10px;
-    width: 100%; /* Ancho completo */
-    z-index:1000; /* Asegurar que esté sobre otros elementos */
+    width: 100%; 
+    z-index:1000; 
 }
 
 .nav-header > div {
@@ -47,7 +47,7 @@
 .nav-header ul li a:hover {
    
     border-radius: 10%;
-    color: var(--color4); /* Cambia este color según tu preferencia */
+    color: var(--color4); 
 }
 .nav-header img {
     width: 100px;
@@ -55,4 +55,17 @@
     border-radius: 50%;
     object-fit: cover;
     padding-bottom: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-header ul {
+        flex-direction: column; 
+        justify-content: space-between; 
+    }
+ 
+    .nav-header ul li:nth-last-child(2),
+.nav-header ul li:last-child {
+    display: none; 
+}
 }

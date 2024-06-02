@@ -14,7 +14,7 @@
     color:var(--color5);
     text-align: center;
     width: 100%;
-    margin-bottom:0px; /* Ajusta el ancho según sea necesario */
+    margin-bottom:0px; 
     
 }
 
@@ -83,4 +83,15 @@
     font-weight: bold;
     font-style: italic;
     color:var(--color4);
+}
+
+@media (max-width: 768px) {
+    .header-container figure img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }

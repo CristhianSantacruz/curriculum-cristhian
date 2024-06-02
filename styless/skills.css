@@ -14,7 +14,7 @@
 #skill .skill-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }

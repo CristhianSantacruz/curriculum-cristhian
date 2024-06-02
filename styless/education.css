@@ -17,12 +17,13 @@
 }
 
 .container-education {
+    border: 2px solid var(--color4);
     max-width: 768px;
     display: flex;
     background-color: var(--color5);
     align-items: center;
     justify-content: space-around;
-    margin: 10px auto; /* Centrar horizontalmente */
+    margin: 10px auto; 
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,7 +48,7 @@
 
 .education-logo {
     display: flex;
-    align-items: center; /* Align image vertically */
+    align-items: center;
 }
 
 .education-logo img {
