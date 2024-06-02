@@ -265,7 +265,11 @@ hr.one {
 }
 
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
      main {
         margin-right: -40px;
+        overflow-x: hidden;
      }
 }
