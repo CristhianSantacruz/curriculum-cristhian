@@ -60,8 +60,8 @@
 
 @media (max-width: 768px) {
     .nav-header ul {
-        flex-direction: column; 
-        justify-content: space-between; 
+       flex-direction: column; 
+       justify-content: space-evenly; 
     }
  
     .nav-header ul li:nth-last-child(2),

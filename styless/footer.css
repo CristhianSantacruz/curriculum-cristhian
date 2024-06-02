@@ -8,10 +8,11 @@
 
 
 #my-footer {
-    background-color:var(--color1);
+    background-color: var(--color1);
     color: var(--color5);
     padding: 1rem 0.5rem;
     text-align: center;
+   
 }
 
 .footer-content {
@@ -71,5 +72,11 @@
 
 .social-icons a:hover svg {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #my-footer {
+        background-color: var(--color2);
+    }
 }
 

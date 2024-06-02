@@ -263,3 +263,9 @@ hr.one {
     }
 }
 }
+
+@media (max-width: 768px) {
+     main {
+        margin-right: -40px;
+     }
+}
